@@ -27,9 +27,11 @@
   -->
     <div data-netlify-identity-button></div>
 
+    <h3 class="user-name"></h3>
+
     <script>
         const user = netlifyIdentity.currentUser();
-        console.log(user);
+        document.getElementsByClassName("user-name")[0].innerHTML = user;
 
     </script>
 </body>
